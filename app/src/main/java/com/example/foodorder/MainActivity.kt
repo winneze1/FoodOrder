@@ -171,7 +171,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun goToHomeActivity(userModel: UserModel?) {
         Common.currentUser = userModel!!
-
+        startActivity(Intent(this@MainActivity, HomeActivity::class.java))
+        finish()
     }
 
     private fun phoneLogin() {
